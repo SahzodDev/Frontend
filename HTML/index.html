@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <!-- ş,ç,ğ,ü,ö, ğ, ı, İ,  Non latin karakter desteği   -->
+    <meta charset="utf-8" />
+
+    <!-- Web sayfamın arama motoru sonuç sayfasında görünecek özet çıklaması  -->
+    <meta name="description" content="Html için tanıtıcı bir giriş" />
+
+    <title>Hello</title>
+  </head>
+
+  <body>
+    <h1>Görsel Kullanmak</h1>
+    <!-- 
+      absolute path -> file:///Users/burak/Desktop/boost-kd-18/html/2024-02-05-using-image/images/Tesla_circa_1890.jpeg
+
+
+      absolute path -> https://wwww.amazon.com/images/01.jpg
+
+
+    <img
+      src="file:///Users/burak/Desktop/boost-kd-18/html/2024-02-05-using-image/images/Tesla_circa_1890.jpeg"
+      alt="Nikola Tesla"
+    />
+
+    -->
+
+    <!-- Relative Path -->
+
+    <!-- ./  current directory - senin kod yazdığın dökümanın içinde bulunduğu klasör -->
+
+    <!-- ../  one level upper director -  senin kod yazdığın dökümanın bir üst klasörü -->
+
+    <!-- / root tarifi -->
+
+    <img src="./images/Tesla_circa_1890.jpeg" alt="Nikola Tesla" width="200" title="Nikola Tesla"/>
+
+    <!--
+
+      <img
+  srcset="elva-fairy-480w.jpg 480w, elva-fairy-800w.jpg 800w"
+  sizes="(max-width: 600px) 480px,
+         800px"
+  src="elva-fairy-800w.jpg"
+  alt="Elva dressed as a fairy" />
+    -->
+
+    <!-- 
+
+      <picture>
+  <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
+  <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
+  <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva" />
+</picture>
+    -->
+
+    <!-- png => transparency saklar. -->
+    <!-- gif => sequence saklar -->
+    <!-- jpg => çok renkli resimlerin sıkıştırılmasında başarılı. -->
+
+  </body>
+</html>
