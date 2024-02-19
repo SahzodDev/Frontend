@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--non latin karakter desteği-->
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Html için temel etiketler">
+
+    <title>Temel Bölgesel Etiketler</title>
+</head>
+<body>
+    <!-- division (bölüm) more generic, less semantic, birden fazla kullanılabilir-->
+    <div>
+        <!--Tasarımsal bir alanın en üst bölümü, more semantic, less generic, birden fazla kullanılabilir-->
+        <header>
+            <h1>
+                <a href="index.html">My Logo</a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="works.html">Çalışmalarım</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+
+                
+                
+                
+            </nav>
+
+        </header>
+        <!--bir dokümanda bir adet kullanılabilir-->
+        <main>
+            
+           <form action="/contact_me" method="get">
+
+            <label for="email">E-posta</label>
+            <input type="email" name="email" placeholder="E-postanızı giriniz." required minlength="10" maxlength="200"/>
+
+            <label for="message">Mesajınız</label>
+            <textarea name="message"  cols="30" rows="10" placeholder="Mesajınızı yazınız" required minlength="20" maxlength="400"></textarea>
+            <button type="submit">Gönder</button>
+
+           </form>
+
+                
+        </main>
+        <!--birden fazla kullanılabilir. alanın en alt bölümünü ifade eder.-->
+        <footer>
+            <a href="https://www.github.com" target="_blank"><img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-github-1.png" alt="github" width="24"> Github</a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-linkedin-3.png" alt="linkedin" width="24"> Linkedin</a>
+        </footer>
+    </div>
+</body>
+</html>

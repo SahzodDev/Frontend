@@ -1,0 +1,74 @@
+
+a {
+    text-decoration: none;
+    
+}
+
+div {
+    border: 2px solid black;
+}
+
+header {
+    border: 2px solid blue;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+main {
+    border: 2px solid red;
+    background-color: white;
+}
+
+footer {
+    border: 2px solid blue;
+}
+
+/*font ailesini komple değiştirmek - IBM PLEX MONO-fonts.google.com*/
+
+body {
+    font-family: "IBM Plex Mono", monospace; /*birincil fontun temin edilememesi durumunda ikinci parametrede alternatif bir font veriyoruz.*/
+}
+
+/*
+    eleman ismi -> p, eleman ismi eleman ismi 
+
+    class ismi -> p.basic
+    
+    id ismi -> p#the-one
+*/
+
+/* bir id iki defa kullanılmamalı. */
+
+#the-one {
+    color: red;
+}
+
+#root {
+    border: 1px solid blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- logos --- */
+
+.logo a{
+    color: black;
+}
+
+.logo i{
+    color: orangered;
+}
+
+.logo.sm i, .logo.sm a {
+    font-size: 12px;
+}
+
+
+
+
+
+

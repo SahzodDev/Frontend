@@ -1,0 +1,26 @@
+
+
+
+body {
+  background-color: orange;
+}
+
+
+/* @media querries */
+
+/* break-point */
+@media screen and ( max-width: 1200px) {
+  body {
+    background-color: purple;
+  }
+}
+
+@media screen and ( max-width: 750px) {
+  body {
+    background-color: blue;
+  }
+}
+
+  
+  
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/01.css">
+
+    <!--selector specifity'leri aynı olduğu için sıralama devreye girdi. önce css dosyası sonra embedded css işlendi.-->
+    <style>
+        html body div p {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header><p>H</p></header>
+        <main><p>M</p></main>
+        <footer><p style="color: greenyellow;">F</p></footer>
+    </div>
+</body>
+</html>

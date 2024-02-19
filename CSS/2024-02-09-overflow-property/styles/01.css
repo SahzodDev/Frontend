@@ -1,0 +1,104 @@
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div {
+    border: 2px solid black;
+}
+
+header {
+    border: 2px solid blue;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+main {
+    border: 2px solid red;
+    background-color: white;
+}
+
+footer {
+    border: 2px solid blue;
+}
+
+
+
+body {
+    font-family: "IBM Plex Mono", monospace; 
+    
+}
+
+h1 {
+    font-size:48px;
+    font-weight:bold;
+}
+
+h2 {
+    border:inherit;
+}
+
+
+
+
+#root>header {
+    border:1px solid blue;
+}
+
+main {
+    border: 1px solid red;
+    display: block;
+}
+
+#root > footer {
+    border: 1px solid blue;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size:1.rem;
+    font-weight: bold;
+}
+
+main section {
+    border: 2px solid black;
+    margin-bottom: 48px;
+    width: 300px;
+    height:200px;
+}
+
+main section:nth-child(1) {
+    overflow: hidden; /* horizontal ve vertical overflow */
+}
+
+main section:nth-child(2) {
+    overflow: scroll; 
+}
+
+main section:nth-child(2) img {
+    max-width: 1000px;
+}
+
+main section:nth-child(3) {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+main section:nth-child(3) img {
+    max-width: 1000px;
+}
+
+main section:nth-child(4) {
+    overflow: auto; /* scroll gerekmiyorsa scroll bar göstermiyor ancak gerekiyorsa gösteriyor. Eğer overflow scroll olsaydı, orada gerekme durumundan bağımsız oalrak bar gözükürdü.*/
+}
+
+

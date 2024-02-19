@@ -1,0 +1,42 @@
+div {
+    border: 2px solid black;
+}
+
+header {
+    border: 2px solid blue;
+}
+
+main {
+    border: 2px solid red;
+    background-color: white;
+}
+
+
+
+footer {
+    border: 2px solid blue;
+}
+
+p {
+    /* color özelliği text rengini değiştirmek için kullanılır.*/
+    color: red;
+}
+
+/* main'in alt öğesi olan p elemanları. */
+main p {
+    color: blue;
+}
+
+/* eşit selector specifity'e sahip oldukları için son gelen override etti. */
+div p {
+    color: pink;
+}
+
+html body div p {
+    color: yellow;
+}
+
+/*html dokunmadan yüksek öncelikli manipülasyon, dikkatli kullanılmalı.*/
+footer p {
+    color:lightgray!important;
+}

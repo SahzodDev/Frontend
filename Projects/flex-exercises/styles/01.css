@@ -1,0 +1,177 @@
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div {
+    border: 2px solid black;
+}
+
+header {
+    border: 2px solid blue;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+main {
+    border: 2px solid red;
+    background-color: white;
+}
+
+footer {
+    border: 2px solid blue;
+}
+
+
+
+body {
+    font-family: "IBM Plex Mono", monospace; 
+    
+}
+
+h1 {
+    font-size:48px;
+    font-weight:bold;
+}
+
+h2 {
+    border:inherit;
+}
+
+
+
+
+#root>header {
+    border:1px solid blue;
+}
+
+main {
+    border: 1px solid red;
+    display: block;
+}
+
+#root > footer {
+    border: 1px solid blue;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size:1.rem;
+    font-weight: bold;
+}
+
+.logo {
+    border: 2px solid black;
+}
+
+div.exercise-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 24px;
+    height:64px;
+}
+
+
+
+div.exercise-1 nav>ul {
+    display: flex;
+    column-gap: 3px;
+}
+
+div.exercise-2 {
+    
+    margin-top: 16px;
+}
+
+div.exercise-2 .container {
+
+    height: 128px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+
+    padding: 8px;
+    
+
+}
+
+div.exercise-2 .container>section {
+
+    border: 2px rgb(2, 41, 2);
+    background-color: rgb(177, 230, 195);
+
+    
+    border-radius: 1.5px;
+    flex-grow: 1;
+    flex-basis: 0;
+    
+}
+
+#root>footer {
+    padding-top: 24px;
+}
+
+
+section.exercise-3 .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+section.exercise-3 .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap:24px;
+}
+
+nav.big-nav {
+    font-size: 16px;
+}
+
+nav.small-nav {
+    font-size: 12px;
+}
+
+.exercise-5 .container {
+    border: 2px solid black;
+    padding: 24px;
+}
+
+.exercise-5 .container >.row {
+    border: 2px solid blue;
+    display: flex;
+    margin-bottom: 8px;
+    column-gap: 8px;
+}
+
+.exercise-5 .container >.row > .col {
+    border: 2px solid orange;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.exercise-6 .container {
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    
+}
+
+.exercise-6 .container > .col {
+    border: 2px solid red;
+    flex-basis: calc (( 1005 - 24px) / 4);
+}

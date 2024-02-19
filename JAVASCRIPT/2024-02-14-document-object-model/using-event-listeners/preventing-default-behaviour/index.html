@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preventing Default Behaviour</title>
+
+    
+    <style>
+        form {
+            border: 1px solid black;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.2rem;
+            max-width:500px;
+        }
+
+        input [type="email"] {
+            padding: 4px;
+            font-size: 1rem;
+        }
+
+        button [type="submit"] {
+            height: 48px;
+        }
+
+        [required = "true"]:: ::before {
+            content:"***"
+        }
+    </style>
+    
+
+</head>
+<body>
+    
+    <h1>Mesaj Gönder</h1>
+
+    <form  id="frm-send-message">
+        
+        <input type="email" name="email" id="email" placeholder="e-postanız" required/>
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Mesajınız" required></textarea>
+
+        <button type="submit">Mesajı Gönder</button>
+    </form>
+
+    <a href="https://www.github.com" id="the-link">Github</a>
+
+    <script src="./01.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+* {
+    box-sizing: border-box; /* Öğelere verilen box, border ve heading dahil hesaplanır.*/
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div {
+    border: 2px solid black;
+}
+
+header {
+    border: 2px solid blue;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1 strong {
+    background-color: black;
+    color: pink;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+
+
+main {
+    border: 2px solid red;
+    background-color: white;
+}
+
+main .box {
+    width:200px;
+    height:200px;
+    border:10px solid red;
+}
+
+main .box.type-1 {
+    border-color: blue;
+    margin: 24px;
+    padding:24px;
+    
+
+    /* CW - TOP, RIGHT, BOTTOM, LEFT */
+
+    padding-top:24px;
+    padding-right:24px;
+    padding-bottom:24px;
+    padding-left:24px;
+
+    /* üst 16px, sağ 8px, alt 24px sol 32px*/
+    padding: 16px 8px 24px 32px;
+
+    /* alt ve üst eşit 40px, sağ ve sol eşit 32px */
+    padding: 40px, 32px;
+
+    /* üst 24px, sağ ve sol eşit 16px, alt 32px */
+    padding:24px 16px 32px;
+}
+
+footer {
+    border: 2px solid blue;
+}
+
+
+
+body {
+    font-family: "IBM Plex Mono", monospace; 
+    color:pink;
+}
+
+
+
+#root {
+    border:1px solid black;
+    color:blue
+}
+
+
+
+
+
+
+
+

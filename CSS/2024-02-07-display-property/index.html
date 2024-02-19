@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Ölçü Birimleri</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+
+    <link rel="stylesheet" href="./styles/01.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="root">
+    <header>
+        <h1>CSS Display Özelliği</h1>
+    </header>
+    <main>
+        <h2>Etiketlerin display özellik değerleri default oalrak aşağıdaki değerlerden biri olabilir.</h2>
+        <ul>
+            <li>display:inline</li>
+            <li>display:block</li>
+            <li>display:inline-block</li>
+            <li>display:none</li>
+        </ul>
+
+        <h2></h2>
+        <ul>
+            <li>display:flex</li>
+            <li>display:grid</li>
+        </ul>
+
+
+        <section class="lab">
+            <h1>Inline Elements</h1>
+            <ul>
+                <li>inline öğlere sator okuma yönünde hizalanır.</li>
+                <lİ>
+                    width ve height verilemez. bu etiketler, alan etiketleri olarak düşünülmemiştir.
+                </li>
+                <li>
+                    default genişlikleri auto'dur. içeriklerine göre otomatik değişir.
+                </li>
+                <li>
+                    yükseklikleri, satır yüksekliğine bağlıdır. (line height)
+                </li>
+                <li>
+                    inline öğeler, kapsayıcılarından birine verilen text-align özelliğinin left, right, center, justify değerleri kullanılarak okuma yönünde hizalanabilir.
+                </li>
+                <li> vertical-align özelliğinin top, midle, bottom değerleri ile satır içerisinde dikeyde hizalanabilirler.</li>
+            </ul>
+            <div class="restricted-area">
+                A B C <a href="#"></a>
+                <a href="#"></a>
+
+                <span></span>
+            </div>
+        </section>
+
+        <section class="lab">
+            <h1>Block Elements</h1>
+            <ul>
+                <li>
+                    block öğelerin öynü dikey yöndür. block öğeler alt alta dizilir.
+                </li>
+                <li>
+                    default genişlikleri 100%
+                </li>
+                <li>
+                    width ve height verilebilir.
+                </li>
+                <li>
+                    block öğelerden kalan pozitif boşluk, pozitive space, margin sağ ve sol değeri auto yapılarak paylaştırılabilir.
+                </li>
+            </ul>
+            <div class="restricted-area">
+                <div></div>
+                <article>I am an article</article>
+                A B C
+                <span></span>
+            </div>
+        </section>
+
+        <section class="lab">
+            <h1>Inline-block elements</h1>
+            
+            <p>width ve height verilebilen inline öğelerdir.</p>
+            
+            <div class="restricted-area">
+                
+                A B C
+                <img src="./images/61QYdJRMEDL._AC_SL1500_.jpg" alt="" width="100px">
+            </div>
+        </section>
+
+        <section class="lab">
+            <h1>none elements</h1>
+            
+            <p>viewport'ta görünmez ve yer kaplamaz.</p>
+            
+            <div class="restricted-area">               
+                <button type="button">
+                    <span>*</span>
+                    Hello
+                </button>
+            </div>
+        </section>
+
+        
+    </main>
+    <footer><p>boost kd-18</p></footer>
+</div>   
+
+    
+</body>
+</html>

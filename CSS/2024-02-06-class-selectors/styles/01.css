@@ -1,0 +1,68 @@
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+div {
+    border: 2px solid black;
+}
+
+header {
+    border: 2px solid blue;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+main {
+    border: 2px solid red;
+    background-color: white;
+}
+
+footer {
+    border: 2px solid blue;
+}
+
+/*font ailesini komple değiştirmek - IBM PLEX MONO-fonts.google.com*/
+
+body {
+    font-family: "IBM Plex Mono", monospace; /*birincil fontun temin edilememesi durumunda ikinci parametrede alternatif bir font veriyoruz.*/
+}
+
+/* sınıf belirtmek için "." kullanılır.*/
+.reds {
+    color: red;
+}
+
+/* reds sınıfa ait p elemanları */
+p.reds {
+
+}
+
+/* p elemanı içerisindeki reds sınıfının mensubu olan elemanlar*/
+p .reds {
+
+}
+
+/* hem reds hem bold sınıfının üyesi elemanlar*/
+
+.reds.bold {
+    font-weight: bold;
+} /* sıralama farketmiyor. */
+
+/* hem reds hem bold sınıflarına mensup p elemanları.*/
+p.reds.bold {
+    font-style: italic;
+}
+
+/* codepen: html - css - js playground */
+
+/* codesandbox: react */
+
+
+
+
+

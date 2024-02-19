@@ -1,0 +1,140 @@
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div {
+    border: 2px solid black;
+}
+
+header {
+    border: 2px solid blue;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+main {
+    border: 2px solid red;
+    background-color: white;
+}
+
+footer {
+    border: 2px solid blue;
+}
+
+
+
+body {
+    font-family: "IBM Plex Mono", monospace; 
+    color:pink;
+}
+
+h1 {
+    font-size:48px;
+    font-weight:bold;
+}
+
+h2 {
+    border:inherit;
+}
+
+#root {
+    border:1px solid black;
+    color:blue
+}
+
+#root>header {
+    border:1px solid blue;
+}
+
+main {
+    border: 1px solid red;
+    display: block;
+}
+
+#root > footer {
+    border: 1px solid blue;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size:1.rem;
+    font-weight: bold;
+}
+
+main .container {
+    border: 2px solid black;
+}
+
+main .container .box {
+    border: 2px solid orange;
+    width: 50px;
+    
+    font-size: 0.8rem;
+}
+
+main .container:nth-of-type(1) {
+    height:200px;
+    display:flex;
+
+    /*
+
+    flex direction:row; main -axis
+
+    justify-content: start; main-axis hizalaması için kullanılır
+    
+    align-items:stretch; cross-axis hizalamalarında kullanılır.
+
+    flex-wrap
+
+    gap
+
+    */
+
+    flex-direction: row; 
+    justify-content: start; /* start | end | space-between | space-evenly | space-around */
+    align-items: stretch; /* start | end | center | stretch */
+}
+
+main .container:nth-of-type(2) {
+    height:400px;
+    display:flex;
+    flex-direction: column; /* main-axis*/
+    justify-content: start;
+    align-items: center;
+}
+
+main .container:nth-of-type(3) {
+    height:128px;
+    display:flex;
+    flex-direction: column; /* main-axis*/
+    justify-content: space-between;
+    align-items: end;
+}
+
+main .container:nth-of-type(5) {
+    
+
+    display: flex;
+    justify-content: row;
+    align-items: start;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+
+    gap:24px; /* hem row hem column gap belirtir. */
+}
+
+
+#root>footer {
+    padding-top: 24px;
+}

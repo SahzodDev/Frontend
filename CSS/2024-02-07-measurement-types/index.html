@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Ölçü Birimleri</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+
+    <link rel="stylesheet" href="./styles/01.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <h1>Css Ölçü Birimleri</h1>
+            <hr/>
+        </header>
+        <main>
+            <section id="px">
+                <h3>"px"</h3>
+                <p>A pixel is a fixed-size unit of measurement that corresponds to the physical pixels on a screen.
+                It provides a precise and absolute measurement, making it a good choice for defining fixed dimensions.
+                The size of a pixel is relative to the screen's resolution, and it will appear roughly the same physical size on different screens.</p>
+                <div class="rect">
+                    <div class="square px">
+                        <p class="measurement">24px</p>
+                        <p class="measurement">24px</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="percentage">
+                <h3>"%"</h3>
+                <p>A percentage is a relative unit of measurement that is calculated based on the size of the parent container or the initial containing block.
+                    Percentages are often used to create fluid layouts that adapt to different screen sizes or to specify proportions relative to the parent container.
+                    When using percentages for width or height, the element's size is a percentage of the containing element's size.</p>
+                <div class="rect">
+                    <div class="square perc"><p class="measurement">12.5%</p>
+                    <p class="measurement">50%</p></div>
+                </div>
+            </section>
+
+            <hr/>
+        </main>
+        <footer>
+            <p>boost-kd-18</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+div {
+    border: 2px solid black;
+}
+
+header {
+    border: 2px solid blue;
+}
+
+main {
+    border: 2px solid red;
+    background-color: white;
+}
+
+footer {
+    border: 2px solid blue;
+}
+
+/* whitespace combinator - boşluk kullanarak*/
+
+header nav ul li p {
+    color: blue;
+}
+
+/* aşağı yönlü sıralamanın bir önemi yok */
+
+main p {
+    color: darkgray;
+}
+
+/* child selector > combinator */
+
+main > p {
+    font-weight: bold;
+} /*sadece çocukları seçti, torunlar etkilenmedi.*/ 
+
+/* + combinator */
+
+footer nav + p {
+    font-style: italic;
+} /* kendisisnden sıralama olarak hemen sonra geleni etkiler.*/
+
+/* , */
+
+h1, h2 {
+    border-bottom: 1px dotted gray;
+}
+
+nav h2, h1 {
+
+} /* nav'ın içindeki h2'ler ve bütün h1'ler demek.*/
+
+/* p ~ ul */
+
+p ~ a {
+    color: orangered;
+} /* p tarafından öncelenen a'lar */
+/* arada birşey olsa bile p tarafından öncelenen a'ların hepsi etkileniyor.*/
+
